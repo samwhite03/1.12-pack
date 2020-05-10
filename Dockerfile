@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install -y wget \
 	&& unzip -d /var/lib/minecraft /var/lib/minecraft/1122pack.zip \
 	&& rm /var/lib/minecraft/1122pack.zip
 
-CMD ["launchsever.sh"]
+CMD launchsever.sh
