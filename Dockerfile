@@ -1,4 +1,4 @@
-COPY openjdk:8-jre
+FROM openjdk:8-jre
 MAINTAINER Ronan Munro
 
 EXPOSE 25565
