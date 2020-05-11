@@ -1,5 +1,5 @@
 FROM openjdk:8-jre
-MAINTAINER Ronan Munro
+MAINTAINER Ronan Munro ronan18@live.nl
 
 EXPOSE 25565
 
