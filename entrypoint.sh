@@ -27,10 +27,11 @@ if [ "$CURRENT_VERSION" != "$PACK_VERSION" ]; then
     echo "Unziping downloaded minecraft.zip"
     unzip -qo $MINECRAFT_SRC/minecraft.zip
 	
-    #move important config files to tmp
+    #move config files to tmp
 	echo "Moving config files"
 	mv $MINECRAFT_HOME/server.properties /tmp/server.properties || echo "no server.properties to move"
 	mv $MINECRAFT_HOME/config /tmp/config || echo "no config to move"
+    mv $MINECRAFT_HOME/server-icon.png /tmp/server-icon.png || echo "no server-icon.png to move"
 
     #install new pack version from source dir to server home dir
 	echo "Removing unpacked zip"
@@ -38,10 +39,11 @@ if [ "$CURRENT_VERSION" != "$PACK_VERSION" ]; then
     echo "Installing $PACK_VERSION"
     cp -r $MINECRAFT_SRC/. $MINECRAFT_HOME
 
-    #move back important config files from tmp, and overwrite
+    #move back config files from tmp, and overwrite
     echo "Moving things back"
     yes | cp -r /tmp/server.properties $MINECRAFT_HOME/server.properties || echo "no server.properties to move back"
     yes | cp -r /tmp/config/* $MINECRAFT_HOME/config || echo "no config to move back"
+    yes | cp -r /tmp/server-icon.png $MINECRAFT_HOME/server-icon.png || echo "no server-icon.png to move back"
 
     echo $PACK_VERSION > $VERSION_FILE
 
