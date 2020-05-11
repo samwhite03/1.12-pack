@@ -19,8 +19,8 @@ Set standard to `false`. `MINECRAFT_EULA` has to be set to `true` by the user to
 ### MINECRAFT_HOME
 `MINECRAFT_HOME` default set to `/opt/minecraft`. This is the directory where the server files and world is located. I would not change this variable.
 
-###MAX_MEM
-Default set to `4G`. You could change this if you desire more memory for the server.
+### MAX_MEM
+`MAX_MEM` default set to `4G`. You could change this if you desire more memory for the server.
 
 ## Updating and config files
 If there is a mismatch between the user set `PACK_VERSION` and currently installed server version, the server will do the following:
