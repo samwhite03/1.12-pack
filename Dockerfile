@@ -6,6 +6,7 @@ EXPOSE 25565
 ENV PACK_VERSION=1.1.2
 ENV MINECRAFT_HOME="/opt/minecraft"
 ENV MINECRAFT_SRC="/usr/src/minecraft"
+ENV MINECRAFT_EULA=false
 
 VOLUME ["/opt/minecraft"]
 WORKDIR /opt/minecraft
