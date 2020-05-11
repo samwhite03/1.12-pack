@@ -21,9 +21,9 @@ Set standard to `false`. `MINECRAFT_EULA` has to be set to `true` by the user to
 
 ## Updating and config files
 If there is a mismatch between the user set `PACK_VERSION` and currently installed server version, the server will do the following:
-..* Backup config dir, and server.properties to tmp folder.
-..* Download set `PACK_VERSION` zip, and unpack it to `MINECRAFT_SRC`
-..* Write `MINECRAFT_SRC` to `MINECRAFT_HOME`
-..* Copy and overwrite config dir and server.properties to from tmp to `MINECRAFT_HOME`
+	* Backup config dir, and server.properties to tmp folder.
+	* Download set `PACK_VERSION` zip, and unpack it to `MINECRAFT_SRC`
+	* Write `MINECRAFT_SRC` to `MINECRAFT_HOME`
+	* Copy and overwrite config dir and server.properties to from tmp to `MINECRAFT_HOME`
 
 This is usefull as you don't lose your (custom set) configs when updating to a new modpack version.
