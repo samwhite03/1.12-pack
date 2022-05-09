@@ -59,4 +59,4 @@ check_env
 #start the server
 echo "Starting server"
 cd $MINECRAFT_HOME
-java -server -Xmx$MAX_MEM -Dfml.queryResult=confirm -jar forge-*-universal.jar nogui
+java -server -Xmx$MAX_MEM -Dfml.queryResult=confirm -jar forge-*.jar nogui
